@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
-import '/Footer'
+import './Footer';
+import Footer from './Footer';
+import Home from './components/home/Home'
 
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Home />,
+        children: [
+            {
+                index: true,
+                element: <HomePage />
+            },
+            {
+                path: "login",
+                element: <LoginPage />
+            },
+            {
+                path: "sign-up",
+                element: <SignUpPage />
+            }
+        ]
+    },
+]);
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hello Samyuktha
-        </a>
-      </header>
+      <Home />
       <Footer />
     </div>
   );
