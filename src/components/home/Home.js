@@ -1,9 +1,11 @@
 import React from 'react';
+import Navbar from '../../common/layout/navbar';
 
 function Home(props) {
     return (
         <>
-            <div>Navbar</div>
+            <div>Home</div>
+            <Navbar/>
         </>
 
     );

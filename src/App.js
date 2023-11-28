@@ -1,35 +1,33 @@
-import './App.css';
-import './Footer';
-import Footer from './Footer';
-import Home from './components/home/Home'
+import {
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
+import { Home, Login } from "./components";
+import Signup from "./components/signup";
 
 const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Home />,
-        children: [
-            {
-                index: true,
-                element: <HomePage />
-            },
-            {
-                path: "login",
-                element: <LoginPage />
-            },
-            {
-                path: "sign-up",
-                element: <SignUpPage />
-            }
-        ]
-    },
+  {
+    path: "/",
+    element: <Home />,
+    children: [
+      {
+        index: true,
+        element: <Home />
+      },
+      {
+        path: "login",
+        element: <Login />
+      },
+      {
+        path: "sign-up",
+        element: <Signup />
+      }
+    ]
+  },
 ]);
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <Home />
-      <Footer />
-    </div>
+    <RouterProvider router={router} fallbackElement={<p>Initial Load...</p>} />
   );
 }
-
-export default App;
