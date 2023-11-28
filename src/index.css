@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* Navbar styling */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+.navbar {
+    /* Set the background color of the navbar */
+    background-color: #3f51b5;
+  }
+  
+  .navbar-logo {
+    /* Define the size of the navbar logo */
+    width: 50px;
+    height: 50px;
+  }
+  
+  .navbar-search {
+    /* Set the margin for the search bar */
+    margin-left: 10px;
+  }
+  
+  .navbar-buttons {
+    /* Set the margin for the buttons on the navbar */
+    margin-left: 10px;
+  }
+  
+  /* Product details styling */
+  
+  .products-page {
+    /* Set the margin for the products page */
+    margin-top: 10px;
+  }
+  
+  .product-details {
+    /* Center the product details container */
+    margin: 0 auto;
+  
+    /* Set the maximum width and padding for the product details container */
+    max-width: 800px;
+    padding: 20px;
+  
+    /* Add a border to the product details container */
+    border: 1px solid #ccc;
+  }
+  
+  .product-info {
+    /* Set the margin for the product information section */
+    margin-top: 20px;
+  }
+  
+  input {
+    /* Add margin-bottom to input fields */
+    margin-bottom: 10px;
+  }
+  
+  button {
+    /* Set padding, border, and cursor style for buttons */
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
