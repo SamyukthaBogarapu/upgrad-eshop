@@ -1,0 +1,28 @@
+.CreateOrder {
+    /* Add padding, border, and border-radius to the CreateOrder container */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .Stepper {
+    /* Add margin-bottom to the stepper component */
+    margin-bottom: 20px;
+  }
+  
+  .StepContent {
+    /* Style the step content sections with padding, border, and border-radius */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    /* Set padding, border, border-radius, and cursor style for buttons */
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,29 @@
+.AddressForm {
+    /* Add padding, border, and border-radius to the AddressForm container */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .FormInput {
+    /* Add margin-bottom, padding, border, and border-radius to each input field */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .Label {
+    /* Style the label as a block element and add margin-bottom */
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    /* Set padding, border, border-radius, and cursor style for the button */
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
